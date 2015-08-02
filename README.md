@@ -6,6 +6,8 @@ click-handler is a very small library that allows you to bind click events to [i
 
 ### HTML
 
+Declare handlers by adding a `data-handler="handler-name"` attribute. Multiple handlers can be added by separating them with white-space.
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -17,6 +19,7 @@ click-handler is a very small library that allows you to bind click events to [i
 <body>
 	<p><a href="/path/to/somewhere" data-handler="my-handler">example</a></p>
 	<p><button type="button" data-handler="my-other-handler">other example</button></p>
+	<p><button type="button" data-handler="my-handler my-other-handler">two handlers</button></p>
 </body>
 </html>
 ```
