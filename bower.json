@@ -1,0 +1,28 @@
+{
+  "name": "click-handler",
+  "version": "0.0.1",
+  "main": "lib/click-handler.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "authors": [
+    "Matijs Brinkhuis <matijs@gmail.com>"
+  ],
+  "description": "Bind click handers to HTML elements in a declarative way",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "click",
+    "handler",
+    "DOM",
+    "events"
+  ],
+  "homepage": "https://github.com/matijs/click-handler"
+}
