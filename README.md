@@ -1,6 +1,6 @@
 # Declarative JS click handler
 
-click-handler.js is a very small library that allows you to bind click events to HTML elements in a declarative way.
+click-handler is a very small library that allows you to bind click events to HTML elements in a declarative way.
 
 ## Example usage
 
@@ -69,20 +69,20 @@ clickHandler.register({
 });
 ```
 
-Removing a handler can be done as follows:
+Unregistering a handler can be done as follows:
 
 ```js
 clickHandler.unregister('my-handler');
 ```
 
-…or to remove multiple handlers:
+…or to unregister multiple handlers:
 
 ```js
 clickHandler.unregister('my-handler', 'my-other-handler');
 ```
 
 #### Options
-click-handler.js for now has one configurable option:
+click-handler for now has one configurable option:
 
 ```js
 clickHandler.configure({
@@ -93,8 +93,8 @@ clickHandler.configure({
 
 ## Installation
 
-You can install click-handler.js using [Bower](https://bower.io)
+You can install click-handler using [Bower](https://bower.io)
 
 ## License
 
-click-handler.js is available under the [MIT license](http://opensource.org/licenses/MIT)
+click-handler is available under the [MIT license](http://opensource.org/licenses/MIT)
