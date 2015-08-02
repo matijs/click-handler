@@ -1,6 +1,6 @@
 # Declarative JS click handler
 
-click-handler is a very small library that allows you to bind click events to HTML elements in a declarative way.
+click-handler is a very small library that allows you to bind click events to [interactive HTML elements](https://developers.whatwg.org/content-models.html#interactive-content) in a declarative way.
 
 ## Example usage
 
