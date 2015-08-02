@@ -82,12 +82,14 @@ clickHandler.unregister('my-handler', 'my-other-handler');
 ```
 
 #### Options
-click-handler for now has one configurable option:
+click-handler for now has two configurable options:
 
 ```js
 clickHandler.configure({
-	// to always preventDefault
+	// to always preventDefault, default: false
 	alwaysPreventDefault: true,
+	// number of levels to traverse up the DOM to find a handler, default: 2
+	maxTraverse: 3
 });
 ```
 

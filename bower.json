@@ -1,6 +1,6 @@
 {
   "name": "click-handler",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/click-handler.js",
   "license": "MIT",
   "ignore": [
