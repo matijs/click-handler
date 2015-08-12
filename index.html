@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>click-handler.js demo</title>
+	<style>
+		html { font: 1em/1.5 sans-serif; }
+		.data-handler,
+		[data-handler] { outline: 1px dotted grey; outline-offset: .125em; }
+		a { color: inherit; text-decoration: none; }
+		button { border: none; font-size: inherit; }
+		.lime { background-color: limegreen; color: white;}
+	</style>
+</head>
+<body>
+	<h1>Click handler demo</h1>
+	<p>Elements with data-handler attributes will <span class="data-handler">look like this</span>. But click handlers will only work when put on <a href="https://developers.whatwg.org/content-models.html#interactive-content">interactive elements</a></p>
+
+	<h2>Non-interactive elements</h2>
+	<p data-handler="toggle-limegreen">This paragraph has a click-handler but nothing should happen when you click it.</p>
+	<p>This <span data-handler="toggle-limegreen">span element</span> has a click-handler, but again, nothing should happen when you click it.</p>
+
+	<h2>Interactive elements</h2>
+	<h3>One handler</h3>
+	<p>Click the <a href="#" data-handler="toggle-limegreen">anchor element</a> in this paragraph to change its color to limegreen.</p>
+	<p>Click the <button type="button" data-handler="toggle-limegreen">button element</button> in this paragraph to change its color to limegreen.</p>
+	<h3>Multiple handlers</h3>
+	<p>Click the <a href="#" data-handler="toggle-limegreen">anchor element</a> in this paragraph to change its color to limegreen and also add a border.</p>
+	<h3>Nested handlers</h3>
+	<p>Clicking the <a href="#" data-handler="toggle-limegreen"><span><span><span>nested anchor element</span></span></span></a> in this paragraph will <strong>not</strong> work as it is too deeply nested.</p>
+	<p>Clicking the <a href="#" data-handler="toggle-limegreen"><span>nested anchor element</span></a> in this paragraph will work as it is nested only one element deep.</p>
+
+	<script src="lib/click-handler.js"></script>
+	<script>
+		// set the color of the clicked element to limegreen
+		function toggleLimegreen(e) {
+			e.preventDefault();
+			this.className = this.className === 'lime' ? '' : 'lime';
+		}
+
+		// these are the default settings
+		clickHandler.configure({
+			alwaysPreventDefault: false,
+			maxTraverse: 2
+		});
+
+		clickHandler.register('toggle-limegreen', toggleLimegreen);
+	</script>
+</body>
+</html>
