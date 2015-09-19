@@ -1,0 +1,28 @@
+{
+  "name": "click-handler",
+  "version": "1.0.0",
+  "description": "Bind click handers to HTML elements in a declarative way",
+  "main": "lib/click-handler.js",
+  "devDependencies": {
+    "uglify-js": "latest"
+  },
+  "scripts": {
+    "build": "mkdir -p dist && ./node_modules/.bin/uglifyjs lib/click-handler.js -mc > dist/click-handler.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matijs/click-handler.js.git"
+  },
+  "keywords": [
+    "click",
+    "handler",
+    "DOM",
+    "events"
+  ],
+  "author": "Matijs Brinkhuis <matijs@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matijs/click-handler.js/issues"
+  },
+  "homepage": "https://github.com/matijs/click-handler.js#readme"
+}
