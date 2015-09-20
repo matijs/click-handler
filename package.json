@@ -1,6 +1,6 @@
 {
   "name": "click-handler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bind click handers to HTML elements in a declarative way",
   "main": "lib/click-handler.js",
   "devDependencies": {
@@ -22,7 +22,7 @@
   "author": "Matijs Brinkhuis <matijs@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/matijs/click-handler.js/issues"
+    "url": "https://github.com/matijs/click-handler/issues"
   },
-  "homepage": "https://github.com/matijs/click-handler.js#readme"
+  "homepage": "https://github.com/matijs/click-handler#readme"
 }
