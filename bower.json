@@ -1,13 +1,14 @@
 {
   "name": "click-handler",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "main": "lib/click-handler.js",
   "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
-    "test"
+    "test",
+    "dist"
   ],
   "authors": [
     "Matijs Brinkhuis <matijs@gmail.com>"
