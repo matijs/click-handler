@@ -98,8 +98,11 @@ clickHandler.configure({
 
 ## Installation
 
-You can install click-handler using [Bower](https://bower.io)
+You can install click-handler using [npm](https://npmjs.com/):
 
+```bash
+npm install click-handler [--save]
+```
 ## License
 
 click-handler is available under the [MIT license](http://opensource.org/licenses/MIT)
