@@ -8,7 +8,8 @@
     "uglify-js": "latest"
   },
   "scripts": {
-    "build": "mkdir -p dist && ./node_modules/.bin/uglifyjs lib/click-handler.js -mc > dist/click-handler.min.js"
+    "prebuild": "rm -rf dist",
+    "build": "mkdir -p dist && uglifyjs index.js -mc > dist/click-handler.min.js"
   },
   "repository": {
     "type": "git",
