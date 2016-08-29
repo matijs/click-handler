@@ -1,0 +1,98 @@
+---
+env:
+  browser: true
+extends: "eslint:recommended"
+rules:
+  array-bracket-spacing:
+    - error
+    - always
+    - singleValue: false
+  block-scoped-var:
+    - error
+  brace-style:
+    - error
+    - stroustrup
+  comma-dangle:
+    - error
+    - never
+  comma-spacing:
+    - error
+    - after: true
+      before: false
+  comma-style:
+    - error
+    - last
+  curly:
+    - error
+  eol-last:
+    - error
+  eqeqeq:
+    - error
+    - always
+  indent:
+    - error
+    - tab
+  keyword-spacing:
+    - error
+    - before: true
+      after: true
+  linebreak-style:
+    - error
+    - unix
+  newline-after-var:
+    - error
+    - always
+  no-extra-semi:
+    - error
+  no-multi-spaces:
+    - error
+  no-nested-ternary:
+    - error
+  no-trailing-spaces:
+    - error
+  no-whitespace-before-property:
+    - error
+  object-curly-newline:
+    - error
+    - multiline: true
+  object-curly-spacing:
+    - error
+    - always
+    - arraysInObjects: true
+      objectsInObjects: true
+  one-var:
+    - error
+    - never
+  quote-props:
+    - error
+    - always
+  quotes:
+    - error
+    - single
+  semi:
+    - error
+    - always
+  semi-spacing:
+    - error
+    - after: true
+      before: false
+  space-before-function-paren:
+    - error
+    - never
+  space-in-parens:
+    - error
+    - always
+    - exceptions:
+        - "{}"
+        - "[]"
+  space-infix-ops:
+    - error
+  space-unary-ops:
+    - error
+    - nonwords: false
+      words: true
+  vars-on-top:
+    - error
+  yoda:
+    - error
+    - never

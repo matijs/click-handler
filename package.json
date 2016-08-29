@@ -4,6 +4,7 @@
   "description": "Bind click handers to HTML elements in a declarative way",
   "main": "lib/click-handler.js",
   "devDependencies": {
+    "eslint": "latest",
     "uglify-js": "latest"
   },
   "scripts": {
