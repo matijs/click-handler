@@ -8,7 +8,6 @@
     "uglify-js": "latest"
   },
   "scripts": {
-    "preinstall": "[[ -x \".git/hooks/pre-commit\" ]] || ln -s ../../bin/pre-commit .git/hooks/pre-commit",
     "prebuild": "rm -rf dist",
     "build": "mkdir -p dist && uglifyjs index.js -mc > dist/click-handler.min.js",
     "test": "eslint index.js"
